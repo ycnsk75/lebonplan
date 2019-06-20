@@ -1,0 +1,12 @@
+<form class="auth" action='/signup' method='POST'>
+  <input type="email" placeholder="Email" name="username"/>
+  <input type="password" placeholder="Password" name="password"/>
+  <input type="password" placeholder="Confirme Password" name="confirme-password"/> 
+  <input type="text" placeholder="FirstName" name="firstName"/>
+  <input type="text" placeholder="SurName" name="surname"/>
+  <input type="text" placeholder="Date of birth" name="date"/>
+  {{#each errors}}
+  <h5>{{this.msg}}  {{this.param}}</h5>
+  {{/each}}
+  <button type="submit">Submit</button>
+</form>

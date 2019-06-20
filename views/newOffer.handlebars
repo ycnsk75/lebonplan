@@ -1,0 +1,12 @@
+<form action='/newoffer' method='POST' enctype="multipart/form-data">
+  <input type="text" placeholder="Title" name="title"/>
+  <input type="file" name="image" />
+  <input type="text" placeholder="Description" name="description"/>
+  <input type="text" placeholder="ID" name="id" />
+  <select id="inputState" name="city" class="form-control">
+        <option selected value="Choose city...">Choose city...</option>
+        <option value="Marseille">Marseille</option>
+        <option value="Paris">Paris</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>

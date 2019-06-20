@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      {{#each image}}
+        <img src="{{this}}" alt="{{this}}">
+      {{/each}}  
+      <h2> {{titre}} </h2>
+      <i class="material-icons" data-id={{id}}>favorite_border</i>
+      <h5 class="prix"> {{prix}}€</h5>
+      <h5>Identifiant: {{id}}</h5>
+      <h5>Ville: {{city}}</h5>
+      <h5>Déscription: </h5>
+      <p>{{description}}</p>
+    </div>
+    <div class="col-6">
+      <h5>Prénom: {{prenom}}</h5>
+      <img src="{{imageProfil}}" alt="{{imageProfil}}"/>
+      <p>{{descriptionProfil}}</p>
+    </div>
+  </div>
+</div>
